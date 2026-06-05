@@ -27,6 +27,10 @@ for (const file of htmlFiles) {
 
   // Fix search link in header
   content = content.replace(/href="\/search"/g, `href="${BASE}/search"`)
+  // Fix blog post links (from PostPreview component)
+  content = content.replace(/href="\/blog\//g, `href="${BASE}/blog/`)
+  // Fix tag links (from PostPreview tag badges)
+  content = content.replace(/href="\/tags\//g, `href="${BASE}/tags/`)
 
   if (content !== original) {
     writeFileSync(file, content, 'utf-8')
