@@ -1,0 +1,19 @@
+{
+  "friends": [
+    {
+      "id_name": "cf-links",
+      "desc": "友情链接",
+      "link_list": []
+    },
+    {
+      "id_name": "inactive-links",
+      "desc": "暂无",
+      "link_list": []
+    },
+    {
+      "id_name": "special-links",
+      "desc": "其他链接",
+      "link_list": []
+    }
+  ]
+}

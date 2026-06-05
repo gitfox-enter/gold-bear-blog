@@ -1,1 +1,101 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>gitfox 的博客</title><description>技术笔记 | 折腾记录 | 生活随笔</description><link>https://gitfox-enter.github.io/gold-bear-blog/</link><item><title>亳州学院校园网自动登录脚本</title><link>https://gitfox-enter.github.io/bzxy-giwifi-script/</link><guid isPermaLink="true">https://gitfox-enter.github.io/bzxy-giwifi-script/</guid><description>介绍为亳州学院 GiWiFi 开发的自动登录脚本，支持断网重连、后台运行</description><pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate></item><item><title>Hello World - 我的第一篇博客</title><link>https://gitfox-enter.github.io/first-post/</link><guid isPermaLink="true">https://gitfox-enter.github.io/first-post/</guid><description>用 Astro 搭建博客的全过程记录</description><pubDate>Thu, 04 Jun 2026 00:00:00 GMT</pubDate></item><item><title>我的两个开源项目</title><link>https://gitfox-enter.github.io/my-projects/</link><guid isPermaLink="true">https://gitfox-enter.github.io/my-projects/</guid><description>介绍 gitfox 博客与站点更新监控两个开源项目</description><pubDate>Thu, 04 Jun 2026 00:00:00 GMT</pubDate></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/scripts/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:h="http://www.w3.org/TR/html4/"><channel><title>金的博客</title><description>亳州学院 | 酒店管理 | 全栈开发</description><link>https://gitfox-enter.github.io</link><item><title>亳州学院校园网自动登录脚本</title><link>https://gitfox-enter.github.io/blog/bzxy-giwifi-script</link><guid isPermaLink="true">https://gitfox-enter.github.io/blog/bzxy-giwifi-script</guid><description>介绍为亳州学院 GiWiFi 开发的自动登录脚本，支持断网重连、后台运行</description><pubDate>Fri, 05 Jun 2026 08:00:00 GMT</pubDate><content:encoded>&lt;p&gt;推荐一个亳州学院校园网自动登录脚本，目前有 29 次安装，版本 1.2.0。&lt;/p&gt;
+&lt;h2&gt;背景&lt;/h2&gt;
+&lt;p&gt;亳州学院使用的是 GiWiFi 校园网，每次断网都需要手动打开登录页输入账号密码，比较麻烦。写这个脚本的目的就是让这个过程完全自动化。&lt;/p&gt;
+&lt;h2&gt;核心功能&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;自动登录&lt;/strong&gt; — 深度适配校园网登录页，自动识别账号/密码输入框并填充，支持页面动态渲染。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;智能网络检测&lt;/strong&gt; — 采用内网网关 + 外网双节点校验，轻量 HEAD 请求，内置智能降频机制，不会频繁请求。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;自定义检测间隔&lt;/strong&gt; — 支持 5~300 秒自由设置，游戏场景用短间隔，挂机场景用长间隔。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;后台运行（独家）&lt;/strong&gt; — 适配脚本猫后台运行能力，关闭所有浏览器窗口后仍可静默检测并自动重连。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;登录状态智能识别&lt;/strong&gt; — 自动区分「登录页」与「已登录页」，避免重复登录。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;全功能可视化菜单&lt;/strong&gt; — 所有操作均可通过脚本猫菜单完成，无需修改代码。&lt;/p&gt;
+&lt;h2&gt;安装方式&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;安装 &lt;a href=&quot;https://docs.scriptcat.org/&quot;&gt;脚本猫&lt;/a&gt; 浏览器扩展（Chrome / Edge 均支持）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;访问脚本页面安装：&lt;/p&gt;
+&lt;p&gt;https://scriptcat.org/zh-CN/script-show-page/5981&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在脚本猫设置里填入校园网账号密码，设置检测间隔&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;连接亳州学院 GiWiFi 后脚本会自动运行&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;注意事项&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;仅支持脚本猫扩展，不兼容油猴、暴力猴等其他管理器&lt;/li&gt;
+&lt;li&gt;使用前需先连接亳州学院校园网 GiWiFi&lt;/li&gt;
+&lt;li&gt;仅用于校园网便捷登录，请遵守学校使用规范&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;开源&lt;/h2&gt;
+&lt;p&gt;脚本采用 MIT 协议开源，欢迎提 Issue 和 PR。&lt;/p&gt;
+&lt;p&gt;作者微信：daishuawangke88&lt;/p&gt;</content:encoded><h:img src="undefined"/><enclosure url="undefined"/></item><item><title>我的两个开源项目</title><link>https://gitfox-enter.github.io/blog/my-projects</link><guid isPermaLink="true">https://gitfox-enter.github.io/blog/my-projects</guid><description>介绍 gitfox 博客与站点更新监控两个开源项目</description><pubDate>Thu, 04 Jun 2026 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;目前我在 GitHub 上有两个自己的项目，记录一下它们的来龙去脉。&lt;/p&gt;
+&lt;h2&gt;1. gitfox 的博客 (gold-bear-blog)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;地址&lt;/strong&gt;: &lt;a href=&quot;https://github.com/gitfox-enter/gold-bear-blog&quot;&gt;gitfox-enter/gold-bear-blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;技术栈&lt;/strong&gt;: Astro 4.16&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;部署&lt;/strong&gt;: GitHub Pages (https://gitfox-enter.github.io/gold-bear-blog/)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这就是你现在看到的博客。技术选型很直接：Astro 做静态博客性能优秀，Content Collections 管理文章方便，配合 GitHub Actions 实现推送到 main 分支即自动部署，零运维成本。&lt;/p&gt;
+&lt;p&gt;博客支持 RSS 订阅 (&lt;code&gt;/rss.xml&lt;/code&gt;) 和 Sitemap (&lt;code&gt;/sitemap.xml&lt;/code&gt;)，方便被搜索引擎收录。&lt;/p&gt;
+&lt;h2&gt;2. 站点更新监控 (site-update-monitor)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;地址&lt;/strong&gt;: &lt;a href=&quot;https://github.com/gitfox-enter/site-update-monitor&quot;&gt;gitfox-enter/site-update-monitor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;技术栈&lt;/strong&gt;: HTML / Python / GitHub Actions&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;部署&lt;/strong&gt;: GitHub Pages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;一个自动化的多站点更新监控系统。核心逻辑很简单：用 GitHub Actions 定时（每 4 小时）抓取一批关注站点的页面内容，与上次快照对比，发现更新就生成报告并发布到 GitHub Pages。&lt;/p&gt;
+&lt;p&gt;目前监控了 35 个站点，覆盖羊毛线报和免费软件两大分类。通过这个系统能高效发现感兴趣的站点更新，不用逐个手动刷新。&lt;/p&gt;
+&lt;h2&gt;总结&lt;/h2&gt;
+&lt;p&gt;两个项目都是实用导向，没有为了技术而技术。博客是输出，监控系统是输入——一个用来记录，一个用来发现。后续会持续迭代。&lt;/p&gt;</content:encoded><h:img src="undefined"/><enclosure url="undefined"/></item><item><title>Hello World - 我的第一篇博客</title><link>https://gitfox-enter.github.io/blog/first-post</link><guid isPermaLink="true">https://gitfox-enter.github.io/blog/first-post</guid><description>用 Astro 搭建博客的全过程记录</description><pubDate>Thu, 04 Jun 2026 08:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;为什么写博客&lt;/h2&gt;
+&lt;p&gt;记录技术折腾的过程，方便以后回看，也分享给有需要的人。&lt;/p&gt;
+&lt;h2&gt;技术选型&lt;/h2&gt;
+&lt;p&gt;最终选择了 &lt;strong&gt;Astro&lt;/strong&gt; 作为静态站点生成器，原因：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;轻量快速，生成的纯 HTML 加载飞快&lt;/li&gt;
+&lt;li&gt;原生支持 Markdown 写作&lt;/li&gt;
+&lt;li&gt;Content Collections 让文章管理很方便&lt;/li&gt;
+&lt;li&gt;部署到 GitHub Pages 零成本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;项目结构&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;gold-bear-blog/
+├── src/
+│   ├── content/
+│   │   ├── config.ts        # 文章 schema 定义
+│   │   └── blog/            # Markdown 文章
+│   ├── layouts/
+│   │   └── BaseLayout.astro  # 全局布局（暗色主题）
+│   └── pages/
+│       ├── index.astro       # 首页（文章列表）
+│       ├── [post].astro      # 文章详情页
+│       ├── about.astro       # 关于页
+│       └── rss.xml.ts        # RSS 订阅
+├── public/
+│   └── favicon.svg
+├── astro.config.mjs
+└── package.json
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;怎么写文章&lt;/h2&gt;
+&lt;p&gt;在 &lt;code&gt;src/content/blog/&lt;/code&gt; 目录下新建 &lt;code&gt;.md&lt;/code&gt; 文件，顶部加上 frontmatter：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;---
+title: &quot;文章标题&quot;
+date: &quot;2026-06-04&quot;
+tags: [&quot;标签1&quot;, &quot;标签2&quot;]
+description: &quot;一句话描述&quot;
+---
+
+正文内容...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;就是这么简单！&lt;/p&gt;
+&lt;h2&gt;后续计划&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[x] 基础博客搭建&lt;/li&gt;
+&lt;li&gt;[ ] 添加代码语法高亮&lt;/li&gt;
+&lt;li&gt;[ ] 添加搜索功能&lt;/li&gt;
+&lt;li&gt;[ ] 自定义域名&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;这就是我的第一篇博客，后续会持续更新。&lt;/p&gt;</content:encoded><h:img src="undefined"/><enclosure url="undefined"/></item></channel></rss>
