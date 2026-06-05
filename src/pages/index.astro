@@ -15,7 +15,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 
 const imagePath = config.logo.src
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  '/src/assets/*.{jpeg,jpg,png,gif,avif,webp}'
+  '/src/assets/*.{jpeg,jpg,png,gif,avif,webp,svg}'
 )
 if (!images[imagePath])
   throw new Error(
