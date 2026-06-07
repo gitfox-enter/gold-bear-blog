@@ -42,6 +42,7 @@ export const theme: ThemeUserConfig = {
     { tag: 'link', attrs: { rel: 'dns-prefetch', href: 'https://fonts.googleapis.com' }, content: '' },
     { tag: 'link', attrs: { rel: 'preconnect', href: 'https://fonts.googleapis.com', crossorigin: 'anonymous' }, content: '' },
     { tag: 'link', attrs: { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' }, content: '' },
+    { tag: 'script', attrs: { src: '/gold-bear-blog/sw-register.js', defer: true }, content: '' },
     { tag: 'link', attrs: { rel: 'manifest', href: '/gold-bear-blog/manifest.json' }, content: '' },
     { tag: 'meta', attrs: { name: 'theme-color', content: '#659EB9' }, content: '' },
     { tag: 'meta', attrs: { name: 'apple-mobile-web-app-capable', content: 'yes' }, content: '' },
