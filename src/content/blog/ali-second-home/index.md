@@ -1,6 +1,7 @@
 ---
 title: 阿里，我的第二故乡
-publishDate: 2026-06-07 15:00:00
+publishDate: 2026-06-07 10:00:00
+author: 李江
 description: 一位军人在西藏阿里驻守五年的真实经历，讲述对这片土地的深厚感情
 tags:
   - 军旅
