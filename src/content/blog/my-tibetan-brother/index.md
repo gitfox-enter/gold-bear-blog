@@ -1,6 +1,7 @@
 ---
 title: 我的藏族兄弟
-publishDate: 2026-06-07 15:10:00
+publishDate: 2026-06-07 11:00:00
+author: 李文化
 description: 一个跨越二十多年的汉藏友谊，从校园到高原的真挚兄弟情
 tags:
   - 友情
