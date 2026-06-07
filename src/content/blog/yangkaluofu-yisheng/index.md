@@ -1,6 +1,7 @@
 ---
 title: 医生和诗人
-publishDate: 2026-06-07 14:30:00
+publishDate: 2026-06-07 15:00:00
+author: 扬卡洛夫（杨队长）
 description: 扬卡洛夫的一篇关于父亲的文章，讲述一个医生的理想与无奈
 tags:
   - 文学
