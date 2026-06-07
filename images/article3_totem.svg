@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a2e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#2d1b4e;stop-opacity:1"/>
+    </linearGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="30%">
+      <stop offset="0%" style="stop-color:#ff69b4;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#ff69b4;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg)"/>
+
+  <!-- Center glow -->
+  <rect width="800" height="500" fill="url(#centerGlow)"/>
+
+  <!-- Floating totem icons (scattered) -->
+  <!-- Wolf (狼) -->
+  <g transform="translate(120, 120)" opacity="0.2">
+    <text font-family="serif" font-size="40">🐺</text>
+  </g>
+  <!-- Sun -->
+  <g transform="translate(650, 100)" opacity="0.2">
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#ffd700" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#ffd700" stroke-width="1"/>
+    <line x1="-30" y1="0" x2="30" y2="0" stroke="#ffd700" stroke-width="0.8"/>
+    <line x1="0" y1="-30" x2="0" y2="30" stroke="#ffd700" stroke-width="0.8"/>
+  </g>
+  <!-- Eagle -->
+  <g transform="translate(680, 380)" opacity="0.2">
+    <text font-family="serif" font-size="35">🦅</text>
+  </g>
+  <!-- Donkey (驴) -->
+  <g transform="translate(100, 380)" opacity="0.15">
+    <text font-family="serif" font-size="35">🫏</text>
+  </g>
+  <!-- AK-47 silhouette (simple) -->
+  <g transform="translate(400, 430)" opacity="0.15">
+    <rect x="-30" y="-3" width="60" height="6" rx="1" fill="#888"/>
+    <rect x="25" y="-6" width="4" height="12" fill="#888"/>
+    <rect x="-35" y="-2" width="10" height="4" fill="#888"/>
+  </g>
+
+  <!-- Question marks floating -->
+  <text x="180" y="300" font-family="serif" font-size="60" fill="#ffffff" opacity="0.06">?</text>
+  <text x="580" y="200" font-family="serif" font-size="80" fill="#ffffff" opacity="0.04">?</text>
+  <text x="500" y="400" font-family="serif" font-size="50" fill="#ffffff" opacity="0.05">?</text>
+
+  <!-- Main title box -->
+  <rect x="100" y="135" width="600" height="120" rx="8" fill="#000000" opacity="0.5" stroke="#ff69b4" stroke-width="1.5"/>
+
+  <!-- Main title -->
+  <text x="400" y="190" text-anchor="middle" font-family="serif, 宋体" font-size="38" font-weight="bold" fill="#ff69b4">女文青是我们藏族人的图腾</text>
+
+  <!-- Subtitle -->
+  <text x="400" y="235" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#cccccc">图腾大吐槽 · 各民族的「神圣之物」</text>
+
+  <!-- Divider -->
+  <line x1="200" y1="280" x2="600" y2="280" stroke="#ff69b4" stroke-width="1" stroke-dasharray="6,3" opacity="0.6"/>
+
+  <!-- Totem list -->
+  <text x="400" y="325" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#ff69b4">藏族 → 女文青</text>
+  <text x="400" y="355" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#dda0dd">阿拉伯 → AK47</text>
+  <text x="400" y="385" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#98fb98">日本 → LoveLive!</text>
+  <text x="400" y="415" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#87ceeb">希腊 → 席梦思</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="475" width="800" height="25" fill="#1a0a2e" opacity="0.9"/>
+  <text x="400" y="492" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ff69b4" opacity="0.7">扬卡洛夫 · Totem Satire</text>
+</svg>
