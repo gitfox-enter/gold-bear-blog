@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="40%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#ffd700;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#glow)"/>
+
+  <!-- Decorative top border -->
+  <rect x="0" y="0" width="800" height="4" fill="#e94560"/>
+
+  <!-- Lotus decoration (left) -->
+  <g transform="translate(80, 200)" opacity="0.15">
+    <ellipse cx="0" cy="0" rx="60" ry="20" fill="none" stroke="#ffd700" stroke-width="1.5"/>
+    <ellipse cx="0" cy="-15" rx="50" ry="18" fill="none" stroke="#ffd700" stroke-width="1.5"/>
+    <ellipse cx="0" cy="-30" rx="40" ry="15" fill="none" stroke="#ffd700" stroke-width="1.5"/>
+    <ellipse cx="0" cy="-45" rx="25" ry="10" fill="none" stroke="#ffd700" stroke-width="1.5"/>
+    <circle cx="0" cy="-55" r="8" fill="#ffd700" opacity="0.5"/>
+  </g>
+
+  <!-- Wheel symbol (right) -->
+  <g transform="translate(720, 200)" opacity="0.15">
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#ffd700" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="35" fill="none" stroke="#ffd700" stroke-width="1"/>
+    <line x1="-50" y1="0" x2="50" y2="0" stroke="#ffd700" stroke-width="1.5"/>
+    <line x1="0" y1="-50" x2="0" y2="50" stroke="#ffd700" stroke-width="1.5"/>
+    <line x1="-35" y1="-35" x2="35" y2="35" stroke="#ffd700" stroke-width="1.5"/>
+    <line x1="-35" y1="35" x2="35" y2="-35" stroke="#ffd700" stroke-width="1.5"/>
+  </g>
+
+  <!-- Main title -->
+  <text x="400" y="160" text-anchor="middle" font-family="serif, 宋体" font-size="48" font-weight="bold" fill="#e94560" filter="url(#shadow)">宗教感悟与吐槽</text>
+
+  <!-- Subtitle -->
+  <text x="400" y="210" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#cccccc">扬卡洛夫 · 90后自黑民族学者</text>
+
+  <!-- Divider -->
+  <line x1="200" y1="240" x2="600" y2="240" stroke="#e94560" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Tags -->
+  <text x="400" y="290" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffd700">屠夫轮回</text>
+  <text x="400" y="325" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#a8dadc">顿悟成佛</text>
+  <text x="400" y="360" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#89c2d9">宗教吐槽</text>
+
+  <!-- Buddhist swastika (卍) -->
+  <text x="400" y="430" text-anchor="middle" font-family="serif" font-size="50" fill="#ffd700" opacity="0.4">☸</text>
+
+  <!-- Bottom border -->
+  <rect x="0" y="496" width="800" height="4" fill="#e94560"/>
+
+  <!-- Credit -->
+  <text x="400" y="485" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#666666">Religion · Buddhism · Critique</text>
+</svg>
