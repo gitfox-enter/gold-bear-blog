@@ -8,7 +8,9 @@ tags:
   - 生活
   - 迷茫
 language: 中文
-image: /images/6150217.jpg
+heroImage:
+  src: ../../../assets/images/6150217.jpg
+  alt: 黑暗中亮起的手机屏幕
 ---
 
 今天我又感觉自己什么都不懂，但还是打开了手机。
