@@ -9,6 +9,8 @@ tags:
   - 西藏
   - 散文
 language: 中文
+heroImage:
+  src: ./cover.jpg
 ---
 
 ![朝圣：当额头长出玛尼堆](cover.jpg)
