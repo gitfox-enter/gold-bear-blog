@@ -7,6 +7,8 @@ tags:
   - 项目
   - GitHub
 language: 中文
+heroImage:
+  src: ./cover.jpg
 ---
 
 ![我的两个开源项目](cover.jpg)
