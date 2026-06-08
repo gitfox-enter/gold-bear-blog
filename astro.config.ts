@@ -35,6 +35,13 @@ export default defineConfig({
     // prefetchAll: true,
     defaultStrategy: 'viewport'
   },
+  // [Build Optimization]
+  build: {
+    // Inline small CSS to avoid extra requests (fixes slow CSS loading)
+    inlineStylesheets: 'auto',
+    // Minimize JavaScript
+    minify: true
+  },
  // [Assets]
   image: {
     responsiveStyles: true,
