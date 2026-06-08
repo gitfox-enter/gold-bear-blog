@@ -8,6 +8,8 @@ tags:
   - 幽默
   - 经典散文
 language: 中文
+heroImage:
+  src: ./cover.jpg
 ---
 
 ![一只特立独行的猪](cover.jpg)
