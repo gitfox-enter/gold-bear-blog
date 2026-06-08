@@ -8,6 +8,8 @@ tags:
   - 乡土
   - 哲思
 language: 中文
+heroImage:
+  src: ./cover.jpg
 ---
 
 ![今生今世的证据](cover.jpg)
