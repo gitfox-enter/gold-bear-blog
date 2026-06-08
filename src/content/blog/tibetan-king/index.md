@@ -8,6 +8,8 @@ tags:
   - 历史
   - 勇敢
 language: 中文
+heroImage:
+  src: ./cover.jpg
 ---
 
 
