@@ -8,6 +8,8 @@ tags:
   - 康巴
   - 旅鬼传说
 language: 中文
+heroImage:
+  src: ./cover.jpg
 ---
 
 
