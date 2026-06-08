@@ -71,4 +71,12 @@ const primaryColor = data.heroImage?.color ?? 'hsl(var(--primary) / var(--un-tex
   <slot name='bottom-sidebar' slot='bottom-sidebar' />
 </PageLayout>
 
+
+<script>
+  // Fix sponsor link: redirect from /sponsor to /projects#sponsorship
+  document.querySelectorAll('a[href*="/sponsor"]').forEach(a => {
+    a.href = '/gold-bear-blog/projects#sponsorship'
+  })
+</script>
+
 {config.integ.mediumZoom.enable && <MediumZoom />}
