@@ -27,11 +27,33 @@ const socialImageURL = new URL(ogImage ? ogImage : config.socialCard, Astro.url)
 <link rel='apple-touch-icon' sizes='180x180' href='/favicon/apple-touch-icon.png' />
 <link rel='manifest' href='/favicon/site.webmanifest' />
 
+{/* DNS Prefetch & Preconnect for Performance */}
+<link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
+<link rel='preconnect' href='https://cdn.jsdelivr.net' crossorigin />
+<link rel='dns-prefetch' href='https://fonts.googleapis.com' />
+<link rel='preconnect' href='https://fonts.googleapis.com' crossorigin />
+<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+
+{/* PWA Manifest */}
+<link rel='manifest' href='/gold-bear-blog/manifest.json' />
+<meta name='theme-color' content='#659EB9' />
+<meta name='apple-mobile-web-app-capable' content='yes' />
+<meta name='apple-mobile-web-app-status-bar-style' content='default' />
+
 {/* Font preloads */}
 <Font cssVariable='--font-satoshi' preload={[{ subset: 'latin', style: 'normal' }]} />
 <style>
   body {
     font-family: var(--font-satoshi);
+  }
+  /* Accessibility: disable animations for users who prefer reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }
 </style>
 
@@ -85,6 +107,21 @@ const socialImageURL = new URL(ogImage ? ogImage : config.socialCard, Astro.url)
 />
 
 <meta content={Astro.generator} name='generator' />
+
+{/* JSON-LD Structured Data for SEO */}
+<script type="application/ld+json">
+  {JSON.stringify({{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "GitFox Blog",
+    "url": "https://gitfox-enter.github.io/gold-bear-blog/",
+    "description": "GitFox · 自动化 · AI 编程 · 生活与远方",
+    "author": {{
+      "@type": "Person",
+      "name": "GitFox"
+    }}
+  }})}
+</script>
 
 {
   /* User script*/
