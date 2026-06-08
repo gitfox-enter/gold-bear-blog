@@ -31,24 +31,17 @@ export default defineConfig({
   // root: './my-project-directory',
   server: { host: true },
   // [Build Optimization]
+  // [Build Optimization]
   build: {
     // Inline small CSS to avoid extra requests
-    inlineStylesheets: 'auto',
-    // Minimize JavaScript
-    minify: true
+    inlineStylesheets: 'auto'
   },
   // https://docs.astro.build/en/guides/prefetch/
   prefetch: {
     // prefetchAll: true,
     defaultStrategy: 'viewport'
   },
-  // [Build Optimization]
-  build: {
-    // Inline small CSS to avoid extra requests (fixes slow CSS loading)
-    inlineStylesheets: 'auto',
-    // Minimize JavaScript
-    minify: true
-  },
+
  // [Assets]
   image: {
     responsiveStyles: true,
