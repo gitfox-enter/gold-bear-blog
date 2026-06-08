@@ -8,6 +8,8 @@ tags:
   - 思想
   - 经典散文
 language: 中文
+heroImage:
+  src: ./cover.jpg
 ---
 
 ![沉默的大多数](cover.jpg)
