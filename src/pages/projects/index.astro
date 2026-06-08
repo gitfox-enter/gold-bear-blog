@@ -2,6 +2,8 @@
 import { Button, Icon } from 'astro-pure/user'
 import PageLayout from '@/layouts/CommonPage.astro'
 import ProjectSection from '@/components/projects/ProjectSection.astro'
+import Sponsorship from '@/components/projects/Sponsorship.astro'
+import wechat from '@/assets/images/wechat-tip.jpg'
 
 const headings = [
   { depth: 2, slug: 'programs', text: '开源项目' },
@@ -64,37 +66,9 @@ const headings = [
   </p>
 
   <p>国内方式：微信赞赏</p>
-  <div class='flex flex-col justify-center gap-4 sm:flex-row'>
-    <div class='sponsorship-card relative justify-center overflow-hidden rounded-xl border bg-white'>
-      <div class='sponsorship-card-icon absolute bottom-0 end-0 start-0 top-0 flex items-center justify-center transition-opacity'>
-        <svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='currentColor' class='size-20'>
-          <g fill='none' fill-rule='evenodd'>
-            <path d='m12.594 23.258-.012.002-.071.035-.02.004-.014-.004-.071-.036q-.016-.004-.024.006l-.004.01-.017.428.005.02.01.013.104.074.015.004.012-.004.104-.074.012-.016.004-.017-.017-.427q-.004-.016-.016-.018m.264-.113-.014.002-.184.093-.01.01-.003.011.018.43.005.012.008.008.201.092q.019.005.029-.008l.004-.014-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014-.034.614q.001.018.017.024l.015-.002.201-.093.01-.008.003-.011.018-.43-.003-.012-.01-.01'/>
-            <path fill='currentColor' d='M12 5c-4.597 0-8 3.073-8 6.5c0 2.014 1.141 3.872 3.042 5.096c.427.276.648.688.766 1.022c.137.384.19.794.206 1.2c.38-.156.674-.433 1.004-.67v-.001c.15-.108.591-.424 1.168-.315q.875.166 1.814.168c4.597 0 8-3.073 8-6.5c0-.91-.231-1.782-.657-2.578l-9.306 5.922a1 1 0 0 1-1.405-.348l-2-3.5a1 1 0 0 1 1.383-1.353l1.58.947a1 1 0 0 0 .944.046l7.371-3.51C16.463 5.836 14.37 5 12 5M2 11.5C2 6.643 6.656 3 12 3c3.454 0 6.552 1.49 8.362 3.83C21.389 8.16 22 9.764 22 11.5c0 4.857-4.656 8.5-10 8.5q-.981-.001-1.911-.155c-.093.073-.253.205-.45.344C9.07 20.59 8.249 21 7 21a1 1 0 0 1-1-1c0-.389.046-.742.009-1.229c-.014-.174-.03-.366-.103-.527C3.577 16.723 2 14.298 2 11.5'/>
-          </g>
-        </svg>
-      </div>
-      <img
-        src='/gold-bear-blog/wechat-tip.jpg'
-        alt='微信赞赏码'
-        loading='lazy'
-        class='sponsorship-card-img mx-auto my-0 max-w-60 blur-sm transition-opacity'
-      />
-    </div>
-  </div>
-
-  <style>
-    .sponsorship-card .sponsorship-card-img {
-      opacity: 0.3;
-      filter: blur(4px);
-      transition: all 0.3s;
-    }
-    .sponsorship-card:hover .sponsorship-card-icon {
-      opacity: 0;
-    }
-    .sponsorship-card:hover .sponsorship-card-img {
-      opacity: 1;
-      filter: blur(0);
-    }
-  </style>
+  <Sponsorship
+    methods={[
+      { name: '微信赞赏', icon: 'wechat-pay', image: wechat }
+    ]}
+  />
 </PageLayout>
