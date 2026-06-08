@@ -62,10 +62,11 @@ const primaryColor = data.heroImage?.color ?? 'hsl(var(--primary) / var(--un-tex
   <Fragment slot='bottom'>
     {/* Copyright */}
     <Copyright {data} />
-    <script defines:vars={{ sponsorHref: Astro.site ? new URL('/projects#sponsorship', Astro.site).pathname : '/projects#sponsorship' }}>
-      document.querySelectorAll('a[href*="/sponsor"]').forEach(a => {
+    <script is:inline>
+      // Fix: point sponsor link directly to projects#sponsorship
+      document.querySelectorAll('a[href*="/sponsor"]').forEach(function(a) {
         if (a.textContent.includes('coffee') || a.textContent.includes('咖啡')) {
-          a.href = sponsorHref;
+          a.href = '/gold-bear-blog/projects#sponsorship';
         }
       });
     </script>
