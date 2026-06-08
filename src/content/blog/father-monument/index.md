@@ -8,6 +8,8 @@ tags:
   - 医生
   - 散文
 language: 中文
+heroImage:
+  src: ./cover.jpg
 ---
 
 ![父亲，我心中的丰碑](cover.jpg)
