@@ -8,6 +8,8 @@ tags:
   - 藏族
   - 散文
 language: 中文
+heroImage:
+  src: ./cover.jpg
 ---
 
 ![我的藏族兄弟](cover.jpg)
