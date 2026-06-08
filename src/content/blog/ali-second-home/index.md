@@ -8,6 +8,8 @@ tags:
   - 西藏
   - 散文
 language: 中文
+heroImage:
+  src: ./cover.jpg
 ---
 
 ![阿里，我的第二故乡](cover.jpg)
