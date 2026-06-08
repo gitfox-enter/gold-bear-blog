@@ -8,6 +8,8 @@ tags:
   - 乡土
   - 新疆
 language: 中文
+heroImage:
+  src: ./cover.jpg
 ---
 
 ![留下这个村庄](cover.jpg)
