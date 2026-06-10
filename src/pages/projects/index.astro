@@ -1,13 +1,8 @@
 ---
-import { Button, Icon } from 'astro-pure/user'
 import PageLayout from '@/layouts/CommonPage.astro'
-import ProjectSection from '@/components/projects/ProjectSection.astro'
+import GithubRepos from '@/components/GithubRepos.astro'
 import Sponsorship from '@/components/projects/Sponsorship.astro'
 import wechat from '@/assets/images/wechat-tip.jpg'
-import { getProjects, getProjectStats } from '@/lib/projects'
-
-const projects = getProjects()
-const stats = getProjectStats()
 
 const headings = [
   { depth: 2, slug: 'programs', text: '开源项目' },
@@ -17,19 +12,10 @@ const headings = [
 ---
 
 <PageLayout title='项目' {headings} view>
-  <p>目前在 GitHub 上维护的几个项目，欢迎 Star / Fork / Issue。</p>
+  <p>以下是我在 GitHub 上的开源项目，数据实时获取自 GitHub API。</p>
 
   <h2 id='programs'>开源项目</h2>
-  <ProjectSection
-    projects={projects.map(project => ({
-      name: `${project.name}${project.stars > 0 ? ` ⭐ ${project.stars}` : ''}`,
-      description: project.description,
-      links: [
-        { type: 'github', href: project.url },
-        ...(project.homepage ? [{ type: 'site' as const, href: project.homepage }] : [])
-      ]
-    }))}
-  />
+  <GithubRepos user='gitfox-enter' />
 
   <h2 id='github'>GitHub 活动</h2>
   <p>
@@ -39,11 +25,6 @@ const headings = [
       loading='lazy'
       style='width: 100%; border-radius: 8px;'
     />
-  </p>
-  <p>
-    <Button title='访问我的 GitHub' href='https://github.com/gitfox-enter' target='_blank'>
-      <Icon class='size-5' name='github' slot='before' />
-    </Button>
   </p>
 
   <h2 id='sponsorship'>赞助</h2>
