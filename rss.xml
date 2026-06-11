@@ -581,7 +581,7 @@
 &lt;h2&gt;开源&lt;/h2&gt;
 &lt;p&gt;脚本采用 MIT 协议开源，欢迎提 Issue 和 PR。&lt;/p&gt;
 &lt;p&gt;作者微信：daishuawangke88&lt;/p&gt;</content:encoded><h:img src="/_astro/cover.S9xWDUgP.jpg"/><enclosure url="/_astro/cover.S9xWDUgP.jpg"/></item><item><title>我的两个开源项目</title><link>https://gitfox-enter.github.io/blog/my-projects</link><guid isPermaLink="true">https://gitfox-enter.github.io/blog/my-projects</guid><description>介绍 gitfox 博客与站点更新监控两个开源项目</description><pubDate>Thu, 04 Jun 2026 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;目前我在 GitHub 上有两个自己的项目，记录一下它们的来龙去脉。&lt;/p&gt;
-&lt;h2&gt;1. gitfox 的博客 (gold-bear-blog)&lt;/h2&gt;
+&lt;h2&gt;1. gitfox 的博客 (gitfox-enter.github.io)&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;地址&lt;/strong&gt;: &lt;a href=&quot;https://github.com/gitfox-enter/gitfox-enter.github.io&quot;&gt;gitfox-enter/gitfox-enter.github.io&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;技术栈&lt;/strong&gt;: Astro 4.16&lt;/li&gt;
@@ -609,7 +609,7 @@
 &lt;li&gt;部署到 GitHub Pages 零成本&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;项目结构&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;gold-bear-blog/
+&lt;pre&gt;&lt;code&gt;gitfox-enter.github.io/
 ├── src/
 │   ├── content/
 │   │   ├── config.ts        # 文章 schema 定义
