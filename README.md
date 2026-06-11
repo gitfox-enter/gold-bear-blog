@@ -2,7 +2,7 @@
 
 Personal blog built with [Astro](https://astro.build) and the [astro-pure](https://github.com/cworld1/astro-theme-pure) theme.
 
-Deployed via GitHub Actions to GitHub Pages at `/gold-bear-blog/`.
+Deployed via GitHub Actions to GitHub Pages at `/`.
 
 ## Features
 
