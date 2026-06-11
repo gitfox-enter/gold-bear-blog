@@ -10,7 +10,7 @@ tags:
   - 散文
 language: 中文
 heroImage:
-  src: https://cdn.jsdelivr.net/gh/gitfox-enter/gold-bear-blog@main/src/content/blog/plateau-sentiment/cover.jpg
+  src: https://cdn.jsdelivr.net/gh/gitfox-enter/gitfox-enter.github.io@main/src/content/blog/plateau-sentiment/cover.jpg
   width: 1536
   height: 1024
 ---
