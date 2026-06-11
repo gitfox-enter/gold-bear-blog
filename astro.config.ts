@@ -26,7 +26,6 @@ export default defineConfig({
   // [Basic]
   site: 'https://gitfox-enter.github.io',
   // GitHub Pages 子路径部署
-  base: '/gold-bear-blog/',
   trailingSlash: 'never',
   // root: './my-project-directory',
   server: { host: true },
