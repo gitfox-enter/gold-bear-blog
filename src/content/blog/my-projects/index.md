@@ -14,9 +14,9 @@ heroImage:
 
 ## 1. gitfox 的博客 (gold-bear-blog)
 
-- **地址**: [gitfox-enter/gold-bear-blog](https://github.com/gitfox-enter/gold-bear-blog)
+- **地址**: [gitfox-enter/gitfox-enter.github.io](https://github.com/gitfox-enter/gitfox-enter.github.io)
 - **技术栈**: Astro 4.16
-- **部署**: GitHub Pages (https://gitfox-enter.github.io/gold-bear-blog/)
+- **部署**: GitHub Pages (https://gitfox-enter.github.io/)
 
 这就是你现在看到的博客。技术选型很直接：Astro 做静态博客性能优秀，Content Collections 管理文章方便，配合 GitHub Actions 实现推送到 main 分支即自动部署，零运维成本。
 
